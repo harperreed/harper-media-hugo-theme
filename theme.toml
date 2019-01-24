@@ -3,13 +3,13 @@
 
 name = "Harperblog"
 license = "MIT"
-licenselink = "https://github.com/harperreed/harperblog-hugo/blob/master/LICENSE.md"
+licenselink = "https://github.com/harperreed/harper-media-hugo-theme/blob/master/LICENSE.md"
 description = ""
-homepage = "http://harper.blog/"
+homepage = "http://harper.photo/"
 tags = []
 features = []
 min_version = "0.36.1"
 
 [author]
   name = "Harper Reed"
-  homepage = "http://harper.blog"
+  homepage = "http://harper.photo"
