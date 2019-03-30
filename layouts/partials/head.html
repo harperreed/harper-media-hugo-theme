@@ -8,12 +8,10 @@
   
     <meta name="description" content="{{ .Site.Params.description }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}" />
-    <meta property="og:title" content="{{ if .Page.Title }}{{ .Page.Title }} |{{end }} {{ .Site.Title }}" />
-    <meta property="og:description" content="{{ .Site.Params.description }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}">
     <meta name="author" content="Harper Reed <{{ .Site.Params.email }}>">
   
-    {{ partial "head/seo_schema.html" . }}
+    {{ partial "head/opengraph.html" . }}
 
     {{ partial "head/javascript.html" . }}
 
