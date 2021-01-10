@@ -1,4 +1,3 @@
-
 {{ define "main" }}
 <nav>
   <ul class="pager">
@@ -7,8 +6,9 @@
   </ul>
 </nav>
 <div class="post" style="padding-bottom: 50px;">
-  <div >
-    <h1 ><a title="Permanent Link to {{ .Title }}." href="{{.RelPermalink}}" rel="bookmark">{{ .Title }}</a> <br /><small>Posted on {{.Date.Format "Jan 2, 2006" }}</small></h1>
+  <div>
+    <h1><a title="Permanent Link to {{ .Title }}." href="{{.RelPermalink}}" rel="bookmark">{{ .Title }}</a>
+      <br /><small>Posted on {{.Date.Format "Jan 2, 2006" }}</small></h1>
   </div>
   <div class="postcontent">
     {{ .Content }}
@@ -32,12 +32,14 @@
 
 <nav>
   <ul class="pager">
-  {{ if .Prev }}
-    <li class="previous"><a href="{{ .Prev.RelPermalink }}" title="Previous: {{ .Prev.Title }}"><span aria-hidden="true">&larr;</span> Previous entry </a></li>
-  {{ end }}
-  {{ if .Next }}
-    <li class="next"><a href="{{ .Next.RelPermalink }}" title="Next: {{ .Next.Title }}">Next entry <span aria-hidden="true">&rarr;</span></a></li>
-  {{ end }}
+    {{ if .Prev }}
+    <li class="previous"><a href="{{ .Prev.RelPermalink }}" title="Previous: {{ .Prev.Title }}"><span
+          aria-hidden="true">&larr;</span> Previous entry </a></li>
+    {{ end }}
+    {{ if .Next }}
+    <li class="next"><a href="{{ .Next.RelPermalink }}" title="Next: {{ .Next.Title }}">Next entry <span
+          aria-hidden="true">&rarr;</span></a></li>
+    {{ end }}
   </ul>
 </nav>
 {{ end }}
